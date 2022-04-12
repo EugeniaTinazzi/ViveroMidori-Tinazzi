@@ -710,8 +710,8 @@ main {
         font-size: 25px;
         background-color: #c1e19893;
         border-radius: 10px 5px 10px 5px;
-        /* padding: 5px;
-        margin: 8px; */
+        padding: 5px;
+        margin: 8px;
     }
     
     .main__tromen .main__productos .main__calefaccion .main__calefaccion--links a:hover {
@@ -746,8 +746,8 @@ main {
         font-size: 25px;
         background-color: #c1e19893;
         border-radius: 10px 5px 10px 5px;
-        /* padding: 5px;
-        margin: 8px; */
+        padding: 5px;
+        margin: 8px;
     }
     
     .main__tromen .main__productos .main__gourmet .main__gourmet--links a:hover {
@@ -780,8 +780,6 @@ main {
         font-size: 25px;
         background-color: #c1e19893;
         border-radius: 10px 5px 10px 5px;
-        /* padding: 5px;
-        margin: 8px; */
     }
     
     .main__tromen .main__productos .main__accesorios .main__accesorios--links a:hover {
