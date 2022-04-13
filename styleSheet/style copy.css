@@ -20,7 +20,7 @@ a:hover {
 
 /* -------HEADER------- */
 
-/* header {
+header {
     position: sticky;
     top: 0;
     background-color: white;
@@ -136,11 +136,11 @@ header .header__menu ul li {
 header .header__menu ul li:hover {
     background-color: #6B8F50;
     text-transform: uppercase;
-} */
+}
 
 /* Media queries Header */
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     header {
         display: flex;
         flex-direction: row;
@@ -173,7 +173,7 @@ header .header__menu ul li:hover {
         justify-content: space-evenly;
     }
 
-} */
+}
  /* -----END HEADER----- */
 
 
