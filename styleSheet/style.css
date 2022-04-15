@@ -52,13 +52,10 @@ main {
 }
 
 .main__welcome p {
-    margin: 1px;
-    padding: 10px;
     display: flex;
     text-align: center;
     font-family: 'Karla', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.2rem;
     color: #323339;
     text-shadow: 0px 0px 5px rgb(201, 201, 201);
 }
