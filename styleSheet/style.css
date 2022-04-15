@@ -780,30 +780,26 @@ main {
     display: grid;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 20px; */
+    margin-top: 6rem;
 }
 
 .main__contact--container h2 {
-    font-size: 27px;
+    font-size: 30px;
     text-align: center;
-    padding: 10px;
 }
 
 .main__location {
-    padding: 20px;
+    padding: 15px;
 }
 
 .main__contact--horario ul li {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
 .main__contact--phone p {
     font-size: 30px;
-}
-
-.container h2 {
-    margin-bottom: 40px
+    text-align: center;
 }
 
 label {
@@ -830,20 +826,15 @@ margin-left: 3px
   border-color: #7b538b;
 }
 
-.col-md-12 {
-    margin: 5px;
-}
-
 .help-block.with-errors {
 color: #ff5050;
 margin-top: 5px
 }
 
 .card {
-margin-left: 10px;
-margin-right: 10px
+    margin-left: 10px;
+    margin-right: 10px;
 }
-
 
 /* -----END MAIN CONTACT----- */
 
@@ -867,7 +858,6 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-        
 }
 
 .footer__redes {
