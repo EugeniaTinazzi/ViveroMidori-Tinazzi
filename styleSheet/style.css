@@ -11,165 +11,35 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #32333957;
+  }
+
 /* ------BODY------ */
 
 
 /* -------HEADER------- */
 
-header {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    z-index: 10;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.header__titulo h1{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: #6B8F50;
+.container-fluid {
     font-family: 'el messiri';
-    font-size: 25px;
 }
 
-.header__menu ul {
-    text-align: center;
-    width: 100%;
-    height: 100%;
+.navbar-brand {
+    color: #323339;
 }
 
-.header__menu ul li {
-    border-radius: 5px;
-    display: inline;
-    padding: 10px 5px;
-    margin: 5px;
+.navbar-light .navbar-brand {
+    color: #323339;
 }
 
-.header__menu ul li a {
-    text-align: center;
-    text-decoration: none;
-    color: #6B8F50;
-    font-family: 'el messiri', sans-serif;
-    font-size: 20px;
+.navbar-light .navbar-brand:hover {
+    color: #323339;
 }
 
-.header__menu ul li:hover {
-    background-color: #6B8F50;
-    transition: .3s;
+.offcanvas-title {
+    color: #323339;
 }
 
-.header__menu ul li a:hover {
-     color: #F8F3E6;
-     transition: .3s;
-}
-
-header .header__burguerMenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.2rem;
-    background-color: rgba(155, 150, 150, 0.245);
-    border: none;
-    color: rgb(54, 54, 54);
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input#menu {
-    display: none;
-}
-
-header .header__burguerMenu:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-input#menu:checked ~ .header__menu {
-    display: block;
-}
-
-header .header__menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    height: 100%;
-    background-color: white;
-}
-
-header .header__menu .header__closeMenu {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-}
-
-header .header__menu ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-header .header__menu ul li {
-    font-weight: 800;
-    border-radius: 5px;
-    padding: 0.5rem;
-    transition: ease-in-out 0.2s;
-}
-
-header .header__menu ul li:hover {
-    background-color: #6B8F50;
-    text-transform: uppercase;
-}
-
-/* Media queries Header */
-
-@media screen and (min-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .header__titulo h1{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        color: #6B8F50;
-        font-family: 'el messiri';
-        font-size: 40px;
-    }
-
-    header .header__burguerMenu {
-        display: none;
-    }
-
-    header .header__menu .header__closeMenu {
-        display: none;
-    }
-
-    header .header__menu {
-        display: initial;
-        position: inherit;
-    }
-
-    header .header__menu ul {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-}
  /* -----END HEADER----- */
 
 
@@ -186,29 +56,21 @@ main {
 }
 
 .main__welcome {
-    margin: 15px;
-    padding: 20px;
+    margin-top: 100px;
     height: 100%;
-    background-image: url('../img/img16.jpg');
-    background-repeat: no-repeat;
+    background: url('../img/img16.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
     border-radius: 50px 3px 50px 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .main__welcome p {
-    margin: 1px;
-    padding: 10px;
     display: flex;
     text-align: center;
     font-family: 'Karla', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.2rem;
     color: #323339;
     text-shadow: 0px 0px 5px rgb(201, 201, 201);
+    margin-left: .5rem;
 }
 
 .main__info {
@@ -260,10 +122,10 @@ main {
     padding: 2rem 0.5rem;
     display: grid;
     grid-template-columns: repeat (2, 1fr);
-    grid-template-rows: 1fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-      "main__category1 main__category2"
-      "main__category1 main__category2"
+      "main__category1 main__category1"
+      "main__category2 main__category2"
       "main__category3 main__category3";
     font-family: 'Karla';
     text-align: center;
@@ -426,6 +288,7 @@ main {
 .main__plantas {
     font-family: 'Karla';
     color: #323339;
+    margin-top: 5rem;
 } 
 
 .main__titulo {
@@ -573,6 +436,7 @@ main {
     width: 100%;
     height: 100%;
     margin-bottom: 10px;
+    margin-top: 5rem;
 }
 
 .main__tromen h2 {
@@ -802,64 +666,29 @@ main {
 
 /* -----MAIN GUIA PLANT CARE----- */
 
-.main__guia {
-    font-family: 'Karla';
-    color: #323339;
-}
-
 .main__guia--titulo img {
-    width: 100%;
-    height: 100%;
     padding: 15px;
+    margin-top: 4rem;
 }
 
 .main__guia--titulo h2 {
+    font-family: 'Karla';
     text-align: center;
     font-size: 40px;
+    color: #323339;
 }
 
 .main__guia--titulo h3 {
     text-align: center;
-    font-size: 30px;
+    font-size: 15px;
+    margin-bottom: 2rem;
 }
 
-.main__guia--info h4 {
-    font-size: 30px;
-}
-
-.main__guia--info {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    padding: 5px 5px;
-}
-
-.main__guia--info ul {
-    text-align: center;
-    width: auto;
-    height: auto;
-    }
-
-.main__guia--info ul li {
-    margin: 15px;
-    padding: 10px;
-    background-color: #c1e19860;
-    border-radius: 20px 20px;
-}
-
-.main__guia--info ul li a {
-    text-align: center;
-    font-size: 20px;
-}
-
-.main__guia--info img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    padding: 10px 10px;
-    border-radius: 20px 20px;
-}
+.card-group {
+    margin-bottom: .5rem;
+    font-family: 'Karla';
+    color: #323339;
+  }
 
 /* Media queries Guia Plant Care */
 
@@ -871,54 +700,8 @@ main {
         padding: 15px;
     }
 
-    .main__guia--info h4 {
-        font-size: 20px;
-    }
-
-    .Cesped {
-        grid-area: Cesped;
-    }
-
-    .Podas {
-        grid-area: Podas;
-    }
-
-    .Riego {
-        grid-area: Riego;
-    }
-
-    .Luz {
-        grid-area: Luz;
-    }
-
-    .Fertilizantes {
-        grid-area: Fertilizantes;
-    }
-
-    .ControlEnfermedades {
-        grid-area: ControlEnfermedades;
-    }
-
-    .Compost {
-        grid-area: Compost;
-    }
-      
-    #main__guia--grid {
-        padding: 10px;
-        width: 90%;
-        margin: 20px 0 20px 5%;
-        height: auto; 
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas:
-        "Cesped Podas Riego"
-        "Luz Fertilizantes ControlEnfermedades"
-        "Compost Compost Compost"
-    }
-
-    #main__contenido--plantas {
-        object-fit: contain;
+    .main__guia--titulo h3 {
+        font-size: 30px;
     }
 }
 
@@ -926,6 +709,7 @@ main {
 
 
 /* -----MAIN CONTACT----- */
+
 .main__contact--container {
     font-family: 'karla';
     color: #323339;
@@ -933,17 +717,19 @@ main {
     display: grid;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-top: 6rem;
 }
 
 .main__contact--container h2{
     font-size: 25px;
     text-align: center;
-    padding: 10px;
+    background-color: #7e578d52;
+    border-radius: 10px 4px 10px 4px;
+    margin: 10px 10px;
 }
 
 .main__location {
-    padding: 20px;
+    padding: 15px;
 }
 
 .main__contact--horario ul li{
@@ -962,75 +748,34 @@ main {
     align-items: center;
 }
 
-.main__contact--container .main__form legend {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.main__contact--container .main__form input {
-    height: 2.5rem;
-    padding: 1rem;
-    outline: none;
-    margin-bottom: 1rem;
-}
-
-.main__contact--container .main__form textarea {
-    padding: 1rem;
-    resize: none;
-    margin-bottom: 1rem;
-}
-
-.main__form--buttonsContainer {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-  
-  .main__form--buttonsContainer button {
-    font-weight: bold;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+.btn-send {
+    font-weight: 300;
     text-transform: uppercase;
-    color: white;
-    transition: .1s ease-in;
-    transition: .3s ease-out;
-  }
-  
-  .main__form--buttonsContainer button[type="submit"] {
-    background-color: #6b8f50a4;
-  }
-  
-  .main__form--buttonsContainer button[type="reset"] {
-    background-color: #6b8f508f;
-  }
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px
+}
 
-
-  .main__form--buttonsContainer button:hover {
-    background-color: #F8F3E6;
+.btn-success{
+    background-color: #d5b5e3;
+    border-color: #d5b5e3;
     color: #323339;
-    box-shadow: 0 0 5px #323339;
-    cursor: pointer;
-  }
+}
 
-/* Media queries Contact */
+.btn-success:hover {
+  color: #F8F3E6;
+  background-color: #7b538b;
+  border-color: #7b538b;
+}
 
-@media  screen and (min-width: 768px) {
-    .main__contact--horario {
-        margin: 10px;
-        padding: 10px;
-        background-color: #c1e19893;
-        border-radius: 20px 40px 20px 40px;
-    }
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px
+}
 
-    .main__contact--phone {
-        margin: 10px;
-        padding: 10px;
-        background-color: #c1e19893;
-        border-radius: 20px 40px 20px 40px;
-    }
+.card {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* -----END MAIN CONTACT----- */
@@ -1039,7 +784,7 @@ main {
 /* -----FOOTER----- */
 
 footer {
-    padding: 2rem;
+    padding: 1.5rem;
     position: static;
     background-image: linear-gradient(to top, #6B8F50, #C1E198) ;
     font-family: 'el messiri', sans-serif;
@@ -1056,11 +801,10 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-        
 }
 
 .footer__redes {
-    padding: 20px;
+    padding: 1rem;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -1087,25 +831,25 @@ footer a {
 
 .footer__redes a:hover {
     opacity: 1;
+    color: #32333957;
   }
 
 /* Media queries Footer */
 
 @media  screen and (min-width: 768px) {
     footer {
-        font-weight: bold;
         text-shadow: 0px 0px 0.5px #323339;
     }
 
     .footer__box {
-    text-align: right;
+    text-align: center;
     font-size: 1.2rem;
     }
 
     .footer__redes a {
-        height: 4rem;
-        width: 4rem;
-        font-size: 2rem;
+        height: 3rem;
+        width: 3rem;
+        font-size: 1.5rem;
     }
 }
 
