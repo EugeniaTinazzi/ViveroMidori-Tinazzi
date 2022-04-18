@@ -28,9 +28,17 @@ a:hover {
     color: #323339;
 }
 
-/* .navbar-light .navbar-brand {
+.navbar-light .navbar-brand {
     color: #323339;
-} */
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #323339;
+}
+
+.offcanvas-title {
+    color: #323339;
+}
 
  /* -----END HEADER----- */
 
@@ -676,6 +684,8 @@ main {
 
 .card-group {
     margin-bottom: .5rem;
+    font-family: 'Karla';
+    color: #323339;
   }
 
 /* Media queries Guia Plant Care */
