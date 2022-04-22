@@ -135,18 +135,24 @@ main {
     padding: 20px;
     color: #323339;
     object-fit: cover;
+    background-color: #6b8f5028;
+    border-radius: 20px 5px;
 }
 
 .main__category2 {
     padding: 20px;
     color: #323339;
     object-fit: cover;
+    background-color: #6b8f505b;
+    border-radius: 5px 20px;
 }
 
 .main__category3 {
     padding: 20px;
     color: #323339;
     object-fit: cover;
+    background-color: #6b8f5079;
+    border-radius: 20px 5px;
 }
 
 .main__category4 {
@@ -355,6 +361,9 @@ main {
 .main__webshop p a {
     text-decoration: none;
     color: #323339;
+    background-color: #32333928;
+    border-radius: 5px;
+    padding: 4px;
 }
 
 /* Media queries Plantas */
@@ -580,6 +589,7 @@ main {
         border-radius: 10px 5px 10px 5px;
         padding: 5px;
         margin: 8px;
+        padding: 8px 32px;
     }
     
     .main__tromen .main__productos .main__calefaccion .main__calefaccion--links a:hover {
@@ -616,6 +626,7 @@ main {
         border-radius: 10px 5px 10px 5px;
         padding: 5px;
         margin: 8px;
+        padding: 8px 32px;
     }
     
     .main__tromen .main__productos .main__gourmet .main__gourmet--links a:hover {
@@ -723,11 +734,12 @@ main {
 }
 
 .main__contact--container h2 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     background-color: #7e578d52;
     border-radius: 10px 4px 10px 4px;
-    margin: 10px 10px;
+    margin: 15px 15px;
+    padding: .5rem;
 }
 
 .main__location {
@@ -753,7 +765,8 @@ label {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     width: 80%;
-    margin-left: 3px
+    margin-left: 3px;
+    margin-top: 10px;
 }
 
 .btn-success{
