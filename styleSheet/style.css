@@ -41,6 +41,60 @@ a:hover {
     font-size: 20px;
 }
 
+/* --carousel imágenes-- */
+.pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-bottom: 40px;
+
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+
+.pic-ctn img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+img:nth-child(4) {
+    animation-delay: 6s;
+}
+img:nth-child(5) {
+    animation-delay: 8s;
+}
+
  /* -----END HEADER----- */
 
 
@@ -135,7 +189,7 @@ main {
     padding: 20px;
     color: #323339;
     object-fit: cover;
-    background-color: #6b8f5028;
+    background-color: #f58f006c;
     border-radius: 20px 5px;
 }
 
@@ -143,7 +197,7 @@ main {
     padding: 20px;
     color: #323339;
     object-fit: cover;
-    background-color: #6b8f505b;
+    background-color: #f5650b9f;
     border-radius: 5px 20px;
 }
 
@@ -151,7 +205,7 @@ main {
     padding: 20px;
     color: #323339;
     object-fit: cover;
-    background-color: #6b8f5079;
+    background-color: #f58f006c;
     border-radius: 20px 5px;
 }
 
@@ -415,8 +469,6 @@ main {
         
     #main__contenido--plantas {
         padding: 10px;
-        width: 90%;
-        margin: 20px 0 20px 5%;
         height: auto; 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -760,13 +812,22 @@ label {
     color: #333
 }
 
+.mx-auto {
+    margin-left: .5rem !important;
+}
+
+.my-2 {
+    margin-bottom: 3.5rem !important;
+}
+
+
 .btn-send {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     width: 80%;
-    margin-left: 3px;
-    margin-top: 10px;
+    margin-left: 1px;
+    margin-top: 20px;
 }
 
 .btn-success{
