@@ -38,6 +38,61 @@ a:hover {
 
 .offcanvas-title {
     color: #323339;
+    font-size: 20px;
+}
+
+/* --carousel imágenes-- */
+.pic-ctn {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin-bottom: 40px;
+
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+}
+
+
+.pic-ctn img {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+img:nth-child(4) {
+    animation-delay: 6s;
+}
+img:nth-child(5) {
+    animation-delay: 8s;
 }
 
 /* .offcanvas {
@@ -85,7 +140,6 @@ main {
     justify-content: center;
     text-align: center;
     font-family: 'karla';
-    font-size: 30px;
     color: #323339;
 }
 
@@ -139,18 +193,24 @@ main {
     padding: 20px;
     color: #323339;
     object-fit: cover;
+    background-color: #f58f006c;
+    border-radius: 20px 5px;
 }
 
 .main__category2 {
     padding: 20px;
     color: #323339;
     object-fit: cover;
+    background-color: #f5650b9f;
+    border-radius: 5px 20px;
 }
 
 .main__category3 {
     padding: 20px;
     color: #323339;
     object-fit: cover;
+    background-color: #f58f006c;
+    border-radius: 20px 5px;
 }
 
 .main__category4 {
@@ -180,7 +240,6 @@ main {
     margin-top: 50px;
     margin-bottom: 20px;
     font-family: 'Karla';
-    font-size: 30px;
     text-align: center;
     color: #323339;
 }
@@ -325,11 +384,12 @@ main {
     text-align: center;
     width: auto;
     height: auto;
+    padding-right: 2rem;
 }
 
 .main__contenido ul li {
     margin: 15px;
-    padding: 10px;
+    padding: 5px;
     background-color: #c1e19860;
     border-radius: 20px 20px;
 }
@@ -359,6 +419,9 @@ main {
 .main__webshop p a {
     text-decoration: none;
     color: #323339;
+    background-color: #32333928;
+    border-radius: 5px;
+    padding: 4px;
 }
 
 /* Media queries Plantas */
@@ -410,8 +473,6 @@ main {
         
     #main__contenido--plantas {
         padding: 10px;
-        width: 90%;
-        margin: 20px 0 20px 5%;
         height: auto; 
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -448,6 +509,10 @@ main {
     text-align: center;
     padding: 10px;
 }
+
+.main__productos {
+    padding-right: 2rem;
+}
             /* ---CALEFACCION--- */
 
 .main__tromen .main__productos .main__calefaccion .main__calefaccion--titulo h3 {
@@ -467,7 +532,7 @@ main {
     margin-bottom: 10px;
     background-color: #c1e19893;
     border-radius: 10px 5px 10px 5px;
-    padding: 5px;
+    padding: 8px 32px;
 }
 
 .main__tromen .main__productos .main__calefaccion .main__calefaccion--links a:hover {
@@ -502,7 +567,7 @@ main {
     margin-bottom: 10px;
     background-color: #c1e19893;
     border-radius: 10px 5px 10px 5px;
-    padding: 5px;
+    padding: 8px 32px;
 }
 
 .main__tromen .main__productos .main__gourmet .main__gourmet--links a:hover {
@@ -536,7 +601,7 @@ main {
     margin-bottom: 10px;
     background-color: #c1e19893;
     border-radius: 10px 5px 10px 5px;
-    padding: 5px;
+    padding: 8px 32px;
 }
 
 .main__tromen .main__productos .main__accesorios .main__accesorios--links a:hover {
@@ -582,6 +647,7 @@ main {
         border-radius: 10px 5px 10px 5px;
         padding: 5px;
         margin: 8px;
+        padding: 8px 32px;
     }
     
     .main__tromen .main__productos .main__calefaccion .main__calefaccion--links a:hover {
@@ -618,6 +684,7 @@ main {
         border-radius: 10px 5px 10px 5px;
         padding: 5px;
         margin: 8px;
+        padding: 8px 32px;
     }
     
     .main__tromen .main__productos .main__gourmet .main__gourmet--links a:hover {
@@ -686,6 +753,7 @@ main {
     text-align: center;
     font-size: 15px;
     margin-bottom: 2rem;
+    padding: 0 5px 0 5px;
 }
 
 .card-group {
@@ -724,12 +792,13 @@ main {
     margin-top: 6rem;
 }
 
-.main__contact--container h2{
+.main__contact--container h2 {
     font-size: 25px;
     text-align: center;
     background-color: #7e578d52;
     border-radius: 10px 4px 10px 4px;
-    margin: 10px 10px;
+    margin: 15px 15px;
+    padding: .5rem;
 }
 
 .main__location {
@@ -752,12 +821,22 @@ main {
     align-items: center;
 }
 
+.mx-auto {
+    margin-left: .5rem !important;
+}
+
+.my-2 {
+    margin-bottom: 3.5rem !important;
+}
+
+
 .btn-send {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     width: 80%;
-    margin-left: 3px
+    margin-left: 1px;
+    margin-top: 20px;
 }
 
 .btn-success{
