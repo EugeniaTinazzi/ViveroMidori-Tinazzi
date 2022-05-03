@@ -1,0 +1,99 @@
+/* -----MAIN GUIA PLANT CARE----- */
+
+.main__guia--titulo {
+
+    img {
+        padding: 15px;
+        margin-top: 4rem;
+    }
+
+    h2 {
+        font-family: 'Karla';
+        text-align: center;
+        /* font-size: 40px; */
+        @include h2new;
+        color: #323339;
+    }
+
+    p {
+        text-align: center;
+        font-size: 15px;
+        margin-bottom: 2rem;
+        padding: 0 5px 0 5px;
+    }
+}
+
+.card-group {
+    margin-bottom: .5rem;
+    font-family: 'Karla';
+    color: #323339;
+
+    .card {
+
+        .card-text-cesped {
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            color: #323339
+        }
+
+        .card-text-poda {
+            @extend .card-text-cesped;
+            color: #339E31;
+        }
+
+        .card-text-riego {
+            @extend .card-text-cesped;
+            color: #3E629C
+        }
+
+        .card-text-otono {
+            @extend .card-text-cesped;
+            color: #E86B0C;
+        }
+
+        .card-text-fertilizantes {
+            @extend .card-text-cesped;
+            color: #5C583E;
+        }
+
+        .card-text-control {
+            @extend .card-text-cesped;
+            color: #753027;
+        }
+
+        .card-text-compost {
+            @extend .card-text-cesped;
+            color: #B59816;
+        }
+
+        .card-text-transplante {
+            @extend .card-text-cesped;
+            color: #A1B85C;
+        }
+
+        .card-text-aire {
+            @extend .card-text-cesped;
+            color: #B88380;
+        }
+    }
+}
+
+/* Media queries Guia Plant Care */
+
+@media screen and (min-width: 768px) {
+    .main__guia--titulo {
+
+        img {
+            width: 100%;
+            max-height: 50vh;
+            object-fit: cover;
+            padding: 15px;
+        }
+
+        .main__guia--titulo h3 {
+            font-size: 30px;
+        }
+    }
+}
+
+/* -----END MAIN GUIA PLANT CARE----- */

@@ -1,0 +1,26 @@
+/* -------HEADER------- */
+
+.container-fluid {
+    font-family: 'el messiri';
+}
+
+.navbar-brand {
+    color: #323339;
+}
+
+.navbar-light .navbar-brand {
+    color: #323339;
+
+    &:hover {
+        color: #323339;
+    }
+}
+
+.offcanvas-title {
+    color: #323339;
+    font-size: 20px;
+}
+
+/* -----END HEADER----- */
+
+

@@ -1,0 +1,14 @@
+$redes: (
+    instagram: #C13584,
+    facebook-f: #2956a3,
+    circle-arrow-up: rgba(2, 214, 2, 0.747),
+
+);
+
+@each $red, $color in $redes {
+    .fa-#{$red} {
+        &:hover {
+            color: $color;
+        }
+    }
+}

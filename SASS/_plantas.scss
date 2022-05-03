@@ -1,0 +1,162 @@
+/* -----MAIN PLANTAS----- */
+
+.main__plantas {
+    font-family: 'Karla';
+    color: #323339;
+    margin-top: 5rem;
+}
+
+.main__titulo {
+    width: 90%;
+    padding: 30px;
+    margin: 20px 0 20px 5%;
+    text-align: center;
+
+    h2 {
+        /* font-size: 45px; */
+        @include h2new;
+        background: url('../img/Plantas/a-plants.jpg') no-repeat center center fixed;
+        background-size: cover;
+        border-radius: 10px;
+        padding: 70px;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 15px;
+        font-weight: 300;
+    }
+}
+
+.main__contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    h3 {
+        font-size: 30px;
+        padding: 15px;
+        margin: 1px;
+    }
+
+    p {
+        padding: 10px;
+        margin: 1px;
+    }
+
+    ul {
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding-right: 2rem;
+
+        li {
+            margin: 15px;
+            padding: 5px;
+            background-color: #c1e19860;
+            @include border20;
+        }
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        padding: 10px 10px;
+        margin-bottom: 25px;
+        @include border20;
+    }
+}
+
+.main__webshop {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #323339;
+    font-size: 18px;
+
+    p {
+        a {
+        text-decoration: none;
+        color: #323339;
+        background-color: #32333928;
+        border-radius: 5px;
+        padding: 4px;
+    }
+}
+}
+
+/* Media queries Plantas */
+
+@media screen and (min-width: 768px) {
+    .main__titulo p {
+        font-size: 25px;
+    }
+
+    .ArbolesArbustos {
+        grid-area: ArbolesArbustos;
+    }
+
+    .CitricosFrutales {
+        grid-area: CitricosFrutales;
+    }
+
+    .PlantasInterior {
+        grid-area: PlantasInterior;
+    }
+
+    .CactusSuculentas {
+        grid-area: CactusSuculentas;
+    }
+
+    .Orquideas {
+        grid-area: Orquideas;
+    }
+
+    .Rosales {
+        grid-area: Rosales;
+    }
+
+    .HuertaSemillas {
+        grid-area: HuertaSemillas;
+    }
+
+    .Bulbos {
+        grid-area: Bulbos;
+    }
+
+    .Cubresuelo {
+        grid-area: Cubresuelo;
+    }
+
+    .Gramineas {
+        grid-area: Gramineas;
+    }
+
+    .Enredaderas {
+        grid-area: Enredaderas;
+    }
+
+    .Florales {
+        grid-area: Florales;
+    }
+
+    #main__contenido--plantas {
+        padding: 10px;
+        height: auto;
+        display: grid;
+        object-fit: contain;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "ArbolesArbustos CitricosFrutales"
+            "PlantasInterior CactusSuculentas"
+            "Orquideas Rosales"
+            "HuertaSemillas Bulbos"
+            "Cubresuelo Gramineas"
+            "Enredaderas Florales";
+    }
+}
+
+/* -----END MAIN PLANTAS----- */
