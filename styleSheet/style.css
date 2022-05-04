@@ -5,7 +5,8 @@
   box-sizing: border-box;
   max-width: 100%;
   max-height: 100%;
-  list-style: none; }
+  list-style: none;
+  color: #323339; }
 
 a {
   text-decoration: none; }
@@ -171,7 +172,7 @@ main {
   text-align: center; }
   .main__category h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
     /* font-size: 30px; */ }
   .main__category a {
@@ -197,7 +198,7 @@ img {
   font-family: 'Karla'; }
   .main__category4 h2 {
     /* font-size: 25px; */
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); }
   .main__category4 p {
     font-size: 20px;
@@ -297,7 +298,7 @@ img {
   text-align: center; }
   .main__titulo h2 {
     /* font-size: 45px; */
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
     background: url("../img/Plantas/a-plants.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -398,7 +399,7 @@ img {
   font-family: 'Karla';
   text-align: center;
   /* font-size: 40px; */
-  font-size: 2rem;
+  font-size: 3rem;
   text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
   color: #323339; }
 
@@ -455,7 +456,7 @@ img {
   margin-top: 6rem; }
   .main__contact--container h2 {
     /* font-size: 25px; */
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
     text-align: center;
     background-color: #7e578d52;
@@ -514,100 +515,55 @@ img {
   margin-top: 5rem; }
   .main__tromen h2 {
     /* font-size: 30px; */
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
     text-align: center;
     padding: 10px; }
 
+.btn-primary {
+  color: #323339;
+  background-color: #c1e19893;
+  border-color: #c1e19893; }
+  .btn-primary:hover {
+    color: #F8F3E6;
+    background-color: #6b8f508f;
+    border-color: #6b8f508f; }
+
+.main__info {
+  text-align: center; }
+
 /* ---CALEFACCION--- */
 .main__calefaccion--titulo h3 {
   font-size: 25px;
-  text-align: center; }
+  text-align: center;
+  padding: 2rem; }
 
-.main__calefaccion--titulo img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px 20px;
-  padding: 10px 10px; }
-
-.main__calefaccion--links {
-  margin-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .main__calefaccion--links a {
-    text-decoration: none;
-    color: #323339;
-    font-size: 25px;
-    margin-bottom: 10px;
-    background-color: #c1e19893;
-    border-radius: 10px 5px 10px 5px;
-    padding: 8px 32px; }
-    .main__calefaccion--links a:hover {
-      transform: scale(0.95);
-      background-color: #6b8f508f; }
+.main__calefaccion--titulo a {
+  text-decoration: none; }
 
 /* ---GOURMET--- */
 .main__gourmet--titulo h3 {
   font-size: 25px;
-  text-align: center; }
+  text-align: center;
+  padding: 2rem; }
 
-.main__gourmet--titulo img {
-  width: 100%;
-  height: 100%;
-  padding: 10px 10px;
-  border-radius: 20px 20px; }
-
-.main__gourmet--links {
-  margin-bottom: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .main__gourmet--links a {
-    text-decoration: none;
-    color: #323339;
-    font-size: 25px;
-    margin-bottom: 10px;
-    background-color: #c1e19893;
-    border-radius: 10px 5px 10px 5px;
-    padding: 8px 32px; }
-    .main__gourmet--links a:hover {
-      transform: scale(0.95);
-      background-color: #6b8f508f; }
+.main__gourmet--titulo a {
+  text-decoration: none; }
 
 /* ---ACCESORIOS--- */
 .main__accesorios--titulo h3 {
   font-size: 25px;
-  text-align: center; }
+  text-align: center;
+  padding: 2rem; }
 
-.main__accesorios--titulo img {
-  width: 100%;
-  height: 100%;
-  padding: 10px 10px;
-  border-radius: 20px 20px; }
-
-.main__accesorios--links {
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .main__accesorios--links a {
-    text-decoration: none;
-    color: #323339;
-    font-size: 25px;
-    margin-bottom: 10px;
-    background-color: #c1e19893;
-    border-radius: 10px 5px 10px 5px;
-    padding: 8px 32px; }
-    .main__accesorios--links a:hover {
-      transform: scale(0.95);
-      background-color: #6b8f508f; }
+.main__accesorios--titulo a {
+  text-decoration: none; }
 
 /* --Media queries TROMEN-- */
 @media screen and (min-width: 768px) {
   .main__tromen h2 {
     /* font-size: 45px; */
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
     text-align: center;
     padding: 40px; }
@@ -615,22 +571,8 @@ img {
   .main__calefaccion--titulo h3 {
     font-size: 35px;
     text-align: center; }
-  .main__calefaccion--links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center; }
-    .main__calefaccion--links a {
-      text-decoration: none;
-      color: #323339;
-      font-size: 25px;
-      background-color: #c1e19893;
-      border-radius: 10px 5px 10px 5px;
-      margin: 8px;
-      padding: 8px 20px; }
-      .main__calefaccion--links a:hover {
-        transform: scale(0.95);
-        background-color: #6b8f508f; }
+    .main__calefaccion--titulo h3 a {
+      text-decoration: none; }
   /* ---Media queries GOURMET--- */
   .main__gourmet--titulo h3 {
     font-size: 35px;
