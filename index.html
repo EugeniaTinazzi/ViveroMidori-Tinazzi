@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="">
     <meta name="description" content="Bienvenidos a Vivero Midori Adrogue">
 
     <!-- BOOTSTRAP -->
@@ -109,26 +110,54 @@
                 <p>¿Sabias que en Vivero Midori tenemos libros? En nuestro webshop te mostramos nuestra selección</p>
             </div>
         </section>
+
         <!-- CAROUSEL -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/Carousel-Index/vivero.jpg" class="d-block w-100" alt="Vivero">
-              </div>
-              <div class="carousel-item">
-                <img src="img/Carousel-Index/clematis.jpg" class="d-block w-100" alt="Clematis">
-              </div>
-              <div class="carousel-item">
-                <img src="img/Carousel-Index/gazania.jpg" class="d-block w-100" alt="Gazania">
-              </div>
-              <div class="carousel-item">
-                <img src="img/Carousel-Index/geranio.jpg" class="d-block w-100" alt="Geranio">
-              </div>
-              <div class="carousel-item">
-                <img src="img/Carousel-Index/p_interior.jpg" class="d-block w-100" alt="Interior">
-              </div>
-            </div>
-          </div>
+        <div class="main__carousel">
+          <section class="carousel" style="--carousel-bg-color:var(--white-alpha-color);">
+            <input type="radio" name="slides" id="slide-1" checked>
+            <input type="radio" name="slides" id="slide-2">
+            <input type="radio" name="slides" id="slide-3">
+            <input type="radio" name="slides" id="slide-4">
+            <input type="radio" name="slides" id="slide-5">
+            <input type="radio" name="slides" id="slide-6">
+            <input type="radio" name="slides" id="slide-7">
+            <input type="radio" name="slides" id="slide-8">
+            <input type="radio" name="slides" id="slide-9">
+            <input type="radio" name="slides" id="slide-10">
+            <ul class="slides">
+              <li class="slide">
+                <img src="img/Carousel-Index/vivero.jpg" alt="Vivero">
+              </li>
+              <li class="slide">
+                <img src="img/Carousel-Index/arctotis.jpg" alt="Arctotis">
+              </li>
+              <li class="slide">
+                <img src="img/Carousel-Index/clematis.jpg" alt="Clematis">
+              </li>
+              <li class="slide">
+                <img src="img/Carousel-Index/gazania.jpg" alt="Gazania">
+              </li>
+              <li class="slide">
+                <img src="img/Carousel-Index/malvon.jpg" alt="Malvon">
+              </li>
+              <li class="slide">
+                <img src="img/Carousel-Index/nenufar.jpg" alt="Nenufar">
+              </li>
+              <li class="slide">
+                <img src="img/Carousel-Index/p_interior.jpg" alt="Interior">
+              </li>
+              <li class="slide">
+                <img src="img/Carousel-Index/rosa-china.jpg" alt="Rosa China">
+              </li>
+              <li class="slide">
+                <img src="img/Carousel-Index/scaevola.jpg" alt="Scaevola">
+              </li>
+              <li class="slide">
+                <img src="img/Carousel-Index/lavanda.jpg" alt="Lavanda">
+              </li>
+            </ul>
+          </section>
+        </div>
         <section>
             <div class="main__category4">
                 <h2>¿POR QUÉ NO TENEMOS PLANTAS EN NUESTRA WEB?</h2>
@@ -143,7 +172,6 @@
                 <p class="fs-1">¡TE ESPERAMOS!</p>
             </div>
         </section>
-
     </main>
 
     <footer id="footer">
@@ -161,6 +189,7 @@
                     class="fa-brands fa-facebook-f"></i></a>
             <a href="#top"><i class="fa-solid fa-circle-arrow-up"></i></a>
         </div>
+        <section class="firma"><i class="fas fa-copyright"></i>&nbsp;Design & Development by E Tinazzi</section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

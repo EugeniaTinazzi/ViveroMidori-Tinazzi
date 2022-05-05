@@ -1,3 +1,5 @@
+@import 'mixins';
+
 /* -----MAIN TROMEN----- */
 .main__tromen {
     font-family: 'Karla';
@@ -8,7 +10,6 @@
     margin-top: 5rem;
 
     h2 {
-        /* font-size: 30px; */
         @include h2new;
         text-align: center;
         padding: 10px;
@@ -85,7 +86,6 @@
 
 @media screen and (min-width: 768px) {
     .main__tromen h2 {
-        /* font-size: 45px; */
         @include h2new;
         text-align: center;
         padding: 40px;
@@ -93,71 +93,35 @@
 
     /* ---Media queries CALEFACCION--- */
 
-    .main__calefaccion--titulo h3 {
-        font-size: 35px;
-        text-align: center;
-
+    .main__calefaccion--titulo {
+        h3 {
+            font-size: 35px;
+            text-align: center;
+        }
         a {
             text-decoration: none;
-
         }
     }
 
-
     /* ---Media queries GOURMET--- */
-
-    .main__gourmet--titulo h3 {
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .main__gourmet--links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: center;
-
+    .main__gourmet--titulo {
+        h3 {
+            font-size: 35px;
+            text-align: center;
+        }
         a {
             text-decoration: none;
-            color: #323339;
-            font-size: 25px;
-            background-color: #c1e19893;
-            border-radius: 10px 5px 10px 5px;
-            margin: 8px;
-            padding: 8px 20px;
-
-            &:hover {
-                transform: scale(0.95);
-                background-color: #6b8f508f;
-            }
         }
     }
 
     /* ---Media queries ACCESORIOS--- */
-    .main__accesorios--titulo h3 {
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .main__accesorios--links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: center;
-
+    .main__accesorios--titulo {
+        h3 {
+            font-size: 35px;
+            text-align: center;
+        }
         a {
             text-decoration: none;
-            color: #323339;
-            font-size: 25px;
-            background-color: #c1e19893;
-            border-radius: 10px 5px 10px 5px;
-            margin: 8px;
-            padding: 8px 20px;
-
-            &:hover {
-                transform: scale(0.95);
-                background-color: #6b8f508f;
-            }
         }
     }
 }
