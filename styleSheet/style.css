@@ -382,7 +382,6 @@ main {
 
 .main__titulo {
   width: 90%;
-  padding: 30px;
   margin: 20px 0 20px 5%;
   text-align: center; }
   .main__titulo h2 {
@@ -393,7 +392,7 @@ main {
     padding: 70px; }
   .main__titulo p {
     font-size: 18px;
-    margin: 15px;
+    margin: 40px;
     font-weight: 300; }
 
 .main__contenido {
@@ -418,10 +417,11 @@ main {
       background-color: #c1e19860;
       border-radius: 20px 20px; }
   .main__contenido img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 340px;
     object-fit: cover;
     padding: 10px 10px;
+    margin-top: 25px;
     margin-bottom: 25px;
     border-radius: 20px 20px; }
 
@@ -443,6 +443,11 @@ main {
 @media screen and (min-width: 768px) {
   .main__titulo p {
     font-size: 25px; }
+  .main__titulo h2 {
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); }
+  .main__contenido p {
+    height: 7rem; }
   .ArbolesArbustos {
     grid-area: ArbolesArbustos; }
   .CitricosFrutales {
@@ -474,10 +479,11 @@ main {
     object-fit: contain;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "ArbolesArbustos CitricosFrutales" "PlantasInterior CactusSuculentas" "Orquideas Rosales" "HuertaSemillas Bulbos" "Cubresuelo Gramineas" "Enredaderas Florales"; }
-  .main__titulo h2 {
-    font-size: 2.8rem;
-    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); } }
+    grid-template-areas: "ArbolesArbustos CitricosFrutales" "PlantasInterior CactusSuculentas" "Orquideas Rosales" "HuertaSemillas Bulbos" "Cubresuelo Gramineas" "Enredaderas Florales"; } }
+
+@media screen and (min-width: 1200px) {
+  .main__contenido p {
+    height: 4rem; } }
 
 /* -----END MAIN PLANTAS----- */
 /* -----MAIN GUIA PLANT CARE----- */
