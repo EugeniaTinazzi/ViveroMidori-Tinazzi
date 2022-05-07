@@ -20,7 +20,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: #f8f3e6c9;
-    font-family: 'Karla';
+    @include Karla;
     font-size: 12px;
 }
 

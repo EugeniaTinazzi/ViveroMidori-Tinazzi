@@ -1,3 +1,5 @@
+@import 'mixins';
+
 /* -----MAIN INDEX----- */
 
 main {
@@ -21,7 +23,7 @@ main {
 .main__welcome p {
     display: flex;
     text-align: center;
-    font-family: 'Karla', sans-serif;
+    @include Karla;
     font-size: 1.2rem;
     color: #323339;
     text-shadow: 0px 0px 5px rgb(201, 201, 201);
@@ -35,7 +37,7 @@ main {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: 'karla';
+    @include Karla;
     color: #323339;
 }
 
@@ -86,7 +88,7 @@ main {
         "main__category1 main__category1"
         "main__category2 main__category2"
         "main__category3 main__category3";
-    font-family: 'Karla';
+    @include Karla;
     text-align: center;
 
     h2 {
@@ -230,7 +232,7 @@ main {
     border-radius: 5px;
     text-align: center;
     color: #323339;
-    font-family: 'Karla';
+    @include Karla;
 
     h2 {
         font-size: 35px;
@@ -246,7 +248,7 @@ main {
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    font-family: 'Karla';
+    @include Karla;
     text-align: center;
     color: #323339;
 }

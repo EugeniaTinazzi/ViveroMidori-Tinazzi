@@ -1,7 +1,7 @@
 {
   "name": "web-vivero-midori",
   "version": "1.0.0",
-  "description": "",
+  "description": "Diseño y desarrollo web para Vivero Midori Adrogue",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/EugeniaTinazzi/ViveroMidori-Tinazzi.git"
   },
-  "author": "",
+  "author": "Eugenia Tinazzi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/EugeniaTinazzi/ViveroMidori-Tinazzi/issues"

@@ -126,7 +126,7 @@ main {
 .main__welcome p {
   display: flex;
   text-align: center;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Karla';
   font-size: 1.2rem;
   color: #323339;
   text-shadow: 0px 0px 5px #c9c9c9;
@@ -139,7 +139,7 @@ main {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-family: 'karla';
+  font-family: 'Karla';
   color: #323339; }
 
 #category__grid {
@@ -362,7 +362,7 @@ main {
     margin: 25px;
     padding: 25px; }
   .main__category h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); }
   .main__category4 {
     width: initial;
@@ -370,7 +370,7 @@ main {
     padding: 50px;
     border-radius: 10px; }
     .main__category4 h2 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); } }
 
 /* -----END MAIN INDEX----- */
@@ -386,9 +386,7 @@ main {
   margin: 20px 0 20px 5%;
   text-align: center; }
   .main__titulo h2 {
-    /* font-size: 45px; */
-    font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
+    font-size: 35px;
     background: url("../img/Plantas/a-plants.jpg") no-repeat center center fixed;
     background-size: cover;
     border-radius: 10px;
@@ -476,7 +474,10 @@ main {
     object-fit: contain;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "ArbolesArbustos CitricosFrutales" "PlantasInterior CactusSuculentas" "Orquideas Rosales" "HuertaSemillas Bulbos" "Cubresuelo Gramineas" "Enredaderas Florales"; } }
+    grid-template-areas: "ArbolesArbustos CitricosFrutales" "PlantasInterior CactusSuculentas" "Orquideas Rosales" "HuertaSemillas Bulbos" "Cubresuelo Gramineas" "Enredaderas Florales"; }
+  .main__titulo h2 {
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); } }
 
 /* -----END MAIN PLANTAS----- */
 /* -----MAIN GUIA PLANT CARE----- */
@@ -488,7 +489,7 @@ main {
   font-family: 'Karla';
   text-align: center;
   /* font-size: 40px; */
-  font-size: 3rem;
+  font-size: 2.8rem;
   text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
   color: #323339; }
 
@@ -498,29 +499,32 @@ main {
   margin-bottom: 2rem;
   padding: 0 5px 0 5px; }
 
+h3 {
+  font-size: 20px; }
+
 .card-group {
   margin-bottom: .5rem;
   font-family: 'Karla';
   color: #323339; }
-  .card-group .card .card-text-cesped, .card-group .card .card-text-poda, .card-group .card .card-text-riego, .card-group .card .card-text-otono, .card-group .card .card-text-fertilizantes, .card-group .card .card-text-control, .card-group .card .card-text-compost, .card-group .card .card-text-transplante, .card-group .card .card-text-aire {
-    font-family: Arial, Helvetica, sans-serif;
+  .card-group .card .card-title-cesped, .card-group .card .card-title-poda, .card-group .card .card-title-riego, .card-group .card .card-title-otono, .card-group .card .card-title-fertilizantes, .card-group .card .card-title-control, .card-group .card .card-title-compost, .card-group .card .card-title-transplante, .card-group .card .card-title-aire {
+    font-family: 'El Messiri';
     font-weight: 400;
     color: #323339; }
-  .card-group .card .card-text-poda {
+  .card-group .card .card-title-poda {
     color: #339E31; }
-  .card-group .card .card-text-riego {
+  .card-group .card .card-title-riego {
     color: #3E629C; }
-  .card-group .card .card-text-otono {
+  .card-group .card .card-title-otono {
     color: #E86B0C; }
-  .card-group .card .card-text-fertilizantes {
+  .card-group .card .card-title-fertilizantes {
     color: #5C583E; }
-  .card-group .card .card-text-control {
+  .card-group .card .card-title-control {
     color: #753027; }
-  .card-group .card .card-text-compost {
+  .card-group .card .card-title-compost {
     color: #B59816; }
-  .card-group .card .card-text-transplante {
+  .card-group .card .card-title-transplante {
     color: #A1B85C; }
-  .card-group .card .card-text-aire {
+  .card-group .card .card-title-aire {
     color: #B88380; }
 
 /* Media queries Guia Plant Care */
@@ -530,13 +534,14 @@ main {
     max-height: 50vh;
     object-fit: cover;
     padding: 15px; }
-  .main__guia--titulo .main__guia--titulo h3 {
-    font-size: 30px; } }
+  .main__guia--titulo p {
+    font-size: 20px;
+    font-family: 'Karla'; } }
 
 /* -----END MAIN GUIA PLANT CARE----- */
 /* -----MAIN CONTACT----- */
 .main__contact--container {
-  font-family: 'karla';
+  font-family: 'Karla';
   color: #323339;
   min-height: 90vh;
   display: grid;
@@ -544,9 +549,7 @@ main {
   align-items: center;
   margin-top: 6rem; }
   .main__contact--container h2 {
-    /* font-size: 25px; */
-    font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
+    font-size: 25px;
     text-align: center;
     background-color: #7e578d52;
     border-radius: 10px 4px 10px 4px;
@@ -593,6 +596,12 @@ main {
   margin-left: 10px;
   margin-right: 10px; }
 
+/* Media queries CONTACT */
+@media screen and (min-width: 768px) {
+  .main__contact--container h2 {
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); } }
+
 /* -----END MAIN CONTACT----- */
 /* -----MAIN TROMEN----- */
 .main__tromen {
@@ -603,7 +612,7 @@ main {
   margin-bottom: 10px;
   margin-top: 5rem; }
   .main__tromen h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
     text-align: center;
     padding: 10px; }
@@ -650,7 +659,7 @@ main {
 /* --Media queries TROMEN-- */
 @media screen and (min-width: 768px) {
   .main__tromen h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
     text-align: center;
     padding: 40px; }
