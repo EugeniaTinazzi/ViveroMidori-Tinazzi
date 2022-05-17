@@ -29,12 +29,22 @@ a {
   color: #323339;
   font-size: 20px; }
 
+.navbar-light .navbar-toggler {
+  color: rgba(71, 85, 49, 0.062);
+  border-color: rgba(69, 99, 63, 0.33); }
+
+.navbar-toggler {
+  border-radius: 2rem;
+  padding: 9px 9px;
+  font-size: 1.15rem; }
+
 /* -----END HEADER----- */
 /* -----FOOTER----- */
 footer {
   padding: 1.5rem;
   position: static;
-  background-image: linear-gradient(to top, #6B8F50, #C1E198);
+  background: #6b8f50;
+  background: linear-gradient(0deg, #6b8f50 0%, #c1e198 48%, white 100%);
   font-family: 'el messiri', sans-serif;
   font-size: 14px;
   text-align: center; }
@@ -415,7 +425,7 @@ main {
       margin: 15px;
       padding: 5px;
       background-color: #c1e19860;
-      border-radius: 20px 20px; }
+      border-radius: 5px 5px; }
   .main__contenido img {
     width: 100%;
     height: 340px;
@@ -423,7 +433,7 @@ main {
     padding: 10px 10px;
     margin-top: 25px;
     margin-bottom: 25px;
-    border-radius: 20px 20px; }
+    border-radius: 5px 5px; }
 
 .main__webshop {
   padding: 30px;
