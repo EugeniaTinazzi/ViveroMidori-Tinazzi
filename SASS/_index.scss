@@ -218,6 +218,7 @@ main {
     height: 100%;
     object-fit: cover;
 }
+
 /* --end carousel imágenes-- */
 
 .main__category4 {
@@ -254,9 +255,9 @@ main {
 }
 
 #main__grid {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
+    padding: 10px;
+    width: 90%;
+    margin: 20px 0 20px 5%;
 }
 
 .img__1 {
@@ -280,27 +281,77 @@ main {
 }
 
 .grid__images {
-    height: 70vh;
+    height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 5fr;
     grid-template-areas:
-        "img1 img2"
-        "img3 img4";
-}
-
-.img__5 {
-    display: none;
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5";
 }
 
 .grid__images img {
-    min-height: 100px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
+.img__5 {
+    display: initial;
+}
+
+
 /* Media queries Main Index */
+@media screen and (min-width: 380px) {
+    #main__grid {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img__1 {
+        grid-area: img1;
+    }
+    
+    .img__2 {
+        grid-area: img2;
+    }
+    
+    .img__3 {
+        grid-area: img3;
+    }
+    
+    .img__4 {
+        grid-area: img4;
+    }
+    
+    .img__5 {
+        grid-area: img5;
+    }
+    
+    .grid__images {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4";
+    }
+    
+    .img__5 {
+        display: none;
+    }
+    
+    .grid__images img {
+        min-height: 100px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 
 @media screen and (min-width: 768px) {
     #main__grid {
@@ -363,11 +414,12 @@ main {
         margin: 30px;
         padding: 50px;
         border-radius: 10px;
-        
+
         h2 {
             @include h2new;
         }
     }
 }
 
-/* -----END MAIN INDEX----- */
+
+    /* -----END MAIN INDEX----- */
