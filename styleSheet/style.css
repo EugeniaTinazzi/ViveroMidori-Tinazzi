@@ -68,6 +68,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; }
+  .footer__box a:hover {
+    opacity: 1;
+    color: #323339b0; }
 
 .footer__redes {
   padding: 1rem;
@@ -91,7 +94,7 @@ footer {
     transition: ease-in-out .5s; }
     .footer__redes a:hover {
       opacity: 1;
-      color: #32333957; }
+      color: #323339b0; }
 
 .fa-instagram:hover {
   color: #C13584; }
@@ -129,18 +132,20 @@ main {
 .main__welcome {
   margin-top: 100px;
   height: 100%;
-  background: url("../img/Index/img1.jpg") no-repeat center center fixed;
+  background: url("../img/Index/img1.jpg") no-repeat center center;
   background-size: cover;
   border-radius: 50px 3px 50px 3px; }
-
-.main__welcome p {
-  display: flex;
-  text-align: center;
-  font-family: 'Karla';
-  font-size: 1.2rem;
-  color: #323339;
-  text-shadow: 0px 0px 5px #c9c9c9;
-  margin-left: .5rem; }
+  .main__welcome p {
+    display: flex;
+    text-align: center;
+    font-family: 'Karla';
+    font-size: 1.2rem;
+    color: #323339;
+    text-shadow: 0px 0px 5px #c1d7bb;
+    margin: 25px;
+    padding: 25px;
+    background-color: #f8f3e6b5;
+    border-radius: 50px 3px 50px 3px; }
 
 .main__info {
   width: 100%;
@@ -167,6 +172,10 @@ main {
   background-color: #3f184234;
   border-radius: 5px 20px;
   grid-area: main__category1; }
+  .main__category1:hover {
+    transition: transform 0.5s;
+    transform: scale(0.95);
+    background-color: #3f18429d; }
 
 .main__category2 {
   padding: 20px;
@@ -175,6 +184,10 @@ main {
   background-color: #3f184263;
   border-radius: 5px 20px;
   grid-area: main__category2; }
+  .main__category2:hover {
+    transition: transform 0.5s;
+    transform: scale(0.95);
+    background-color: #3f18429d; }
 
 .main__category3 {
   padding: 20px;
@@ -183,6 +196,10 @@ main {
   background-color: #3f184275;
   border-radius: 5px 20px;
   grid-area: main__category3; }
+  .main__category3:hover {
+    transition: transform 0.5s;
+    transform: scale(0.95);
+    background-color: #3f18429d; }
 
 .main__category {
   min-height: 100px;
@@ -332,11 +349,14 @@ main {
   grid-template-rows: 5fr;
   grid-template-areas: "img1" "img2" "img3" "img4" "img5"; }
 
-.grid__images img {
-  object-fit: contain; }
+.img__3 {
+  display: none; }
 
 .img__5 {
-  display: initial; }
+  display: none; }
+
+.grid__images img {
+  object-fit: contain; }
 
 /* Media queries Main Index */
 @media screen and (min-width: 380px) {
@@ -360,6 +380,8 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "img1 img2" "img3 img4"; }
+  .img__3 {
+    display: initial; }
   .img__5 {
     display: none; }
   .grid__images img {
@@ -398,16 +420,21 @@ main {
     margin: 25px;
     padding: 25px; }
   .main__category h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); }
+  .main__category p {
+    font-size: 1.2rem; }
   .main__category4 {
     width: initial;
     margin: 30px;
     padding: 50px;
     border-radius: 10px; }
     .main__category4 h2 {
-      font-size: 2.8rem;
-      text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); } }
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); }
+  .main__welcome p {
+    margin: 50px;
+    padding: 50px; } }
 
 /* -----END MAIN INDEX----- */
 /* -----MAIN PLANTAS----- */
@@ -480,7 +507,7 @@ main {
   .main__titulo p {
     font-size: 25px; }
   .main__titulo h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); }
   .main__contenido p {
     height: 7rem; }
@@ -531,7 +558,7 @@ main {
   font-family: 'Karla';
   text-align: center;
   /* font-size: 40px; */
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
   color: #323339; }
 
@@ -545,7 +572,7 @@ h3 {
   font-size: 20px; }
 
 .card-group {
-  margin-bottom: .5rem;
+  margin-bottom: 2.5rem;
   font-family: 'Karla';
   color: #323339; }
   .card-group .card .card-title-cesped, .card-group .card .card-title-poda, .card-group .card .card-title-riego, .card-group .card .card-title-otono, .card-group .card .card-title-fertilizantes, .card-group .card .card-title-control, .card-group .card .card-title-compost, .card-group .card .card-title-transplante, .card-group .card .card-title-aire {
@@ -589,7 +616,10 @@ h3 {
   display: grid;
   justify-content: center;
   align-items: center;
-  margin-top: 6rem; }
+  margin-top: 4rem;
+  background: url("../img/Contacto/background1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  z-index: 1; }
   .main__contact--container h2 {
     font-size: 25px;
     text-align: center;
@@ -645,8 +675,12 @@ h3 {
 /* Media queries CONTACT */
 @media screen and (min-width: 768px) {
   .main__contact--container h2 {
-    font-size: 2.8rem;
-    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); } }
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562); }
+  .main__contact--horario ul li {
+    font-size: 30px; }
+  .main__contact--phone p {
+    font-size: 30px; } }
 
 /* -----END MAIN CONTACT----- */
 /* -----MAIN TROMEN----- */
@@ -658,7 +692,7 @@ h3 {
   margin-bottom: 10px;
   margin-top: 5rem; }
   .main__tromen h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
     text-align: center;
     padding: 10px; }
@@ -674,8 +708,8 @@ h3 {
   padding: 1rem;
   margin: 2rem;
   border: 1px solid #32333910;
-  border-radius: 15px;
-  box-shadow: 2px 2px 5px #32333954; }
+  border-radius: 5px 5px;
+  box-shadow: 3px 3px 4px #32333954; }
   .card__info h4 {
     padding: 1rem;
     margin: .5rem; }
@@ -718,17 +752,17 @@ h3 {
 /* --Media queries TROMEN-- */
 @media screen and (min-width: 600px) {
   .main__tromen h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     text-shadow: 2px 2px 5px rgba(58, 57, 57, 0.562);
     text-align: center;
     padding: 40px; }
+  .cards__tromen {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
   /* ---Media queries CALEFACCION--- */
   .main__calefaccion--titulo h3 {
     font-size: 35px;
     text-align: center; }
-  .cards__tromen {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
   /* ---Media queries GOURMET--- */
   .main__gourmet--titulo h3 {
     font-size: 35px;

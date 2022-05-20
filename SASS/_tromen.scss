@@ -29,8 +29,8 @@
     padding: 1rem;
     margin: 2rem;
     border: 1px solid #32333910;
-    border-radius: 15px;
-    box-shadow: 2px 2px 5px #32333954;
+    border-radius: 5px 5px;
+    box-shadow: 3px 3px 4px #32333954;
 
     h4 {
         padding: 1rem;
@@ -77,7 +77,6 @@
     grid-template-columns: 1fr;
 }
 
-
 /* ---GOURMET--- */
 .main__gourmet {
 
@@ -89,7 +88,6 @@
         }
     }
 }
-
 
 /* ---ACCESORIOS--- */
 .main__accesorios {
@@ -114,6 +112,10 @@
         }
     }
 
+    .cards__tromen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     /* ---Media queries CALEFACCION--- */
 
@@ -123,11 +125,6 @@
             font-size: 35px;
             text-align: center;
         }
-    }
-
-    .cards__tromen {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
     }
 
     /* ---Media queries GOURMET--- */
@@ -146,7 +143,6 @@
         }
     }
 }
-
 
 @media screen and (min-width: 1100px) {
 
